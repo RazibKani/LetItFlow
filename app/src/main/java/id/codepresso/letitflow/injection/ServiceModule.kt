@@ -2,7 +2,7 @@ package id.codepresso.letitflow.injection
 
 import id.codepresso.letitflow.BuildConfig
 import id.codepresso.letitflow.data.createNetworkClient
-import id.codepresso.letitflow.data.service.CatFactService
+import id.codepresso.letitflow.data.api.CatFactApi
 import org.koin.dsl.module
 import retrofit2.Retrofit
 
@@ -17,6 +17,6 @@ val serviceModule = module {
             .build()
     }
 
-    single { (get() as Retrofit).create(CatFactService::class.java) }
+    single { (get() as Retrofit).create(CatFactApi::class.java) }
 
 }

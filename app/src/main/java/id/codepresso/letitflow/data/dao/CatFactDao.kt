@@ -1,7 +1,7 @@
-package id.codepresso.letitflow.data.database.dao
+package id.codepresso.letitflow.data.dao
 
 import androidx.room.*
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.entity.CatFact
 import kotlinx.coroutines.flow.Flow
 
 /**

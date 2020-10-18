@@ -21,6 +21,7 @@ class App : Application() {
                     appModule,
                     adapterModule,
                     repositoryModule,
+                    useCaseModule,
                     serviceModule,
                     viewModelModule
                 )

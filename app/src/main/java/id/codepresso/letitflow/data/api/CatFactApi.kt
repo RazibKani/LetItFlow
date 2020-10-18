@@ -1,7 +1,7 @@
-package id.codepresso.letitflow.data.service
+package id.codepresso.letitflow.data.api
 
 import id.codepresso.letitflow.data.ApiResponse
-import id.codepresso.letitflow.data.model.CatFactResponse
+import id.codepresso.letitflow.domain.model.CatFactResponse
 import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -10,7 +10,7 @@ import retrofit2.http.Query
  * Crafted by Razib Kani Maulidan on 11/10/20.
  **/
 
-interface CatFactService {
+interface CatFactApi {
 
     @GET("facts/random")
     fun getCatFacts(

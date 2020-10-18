@@ -1,4 +1,4 @@
-package id.codepresso.letitflow.data.model
+package id.codepresso.letitflow.domain.model
 
 import com.google.gson.annotations.SerializedName
 

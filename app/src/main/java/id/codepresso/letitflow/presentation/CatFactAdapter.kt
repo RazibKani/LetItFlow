@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import id.codepresso.letitflow.R
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.entity.CatFact
 
 /**
  * Crafted by Razib Kani Maulidan on 11/10/20.

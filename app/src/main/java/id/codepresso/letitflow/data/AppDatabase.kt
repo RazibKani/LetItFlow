@@ -1,11 +1,11 @@
-package id.codepresso.letitflow.data.database
+package id.codepresso.letitflow.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import id.codepresso.letitflow.data.database.dao.CatFactDao
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.dao.CatFactDao
+import id.codepresso.letitflow.data.entity.CatFact
 
 /**
  * Crafted by Razib Kani Maulidan on 11/10/20.

@@ -1,4 +1,4 @@
-package id.codepresso.letitflow.data.database.entity
+package id.codepresso.letitflow.data.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

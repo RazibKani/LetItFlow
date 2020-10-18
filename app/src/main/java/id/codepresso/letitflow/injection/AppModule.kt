@@ -1,6 +1,6 @@
 package id.codepresso.letitflow.injection
 
-import id.codepresso.letitflow.data.database.AppDatabase
+import id.codepresso.letitflow.data.AppDatabase
 import org.koin.dsl.module
 
 /**

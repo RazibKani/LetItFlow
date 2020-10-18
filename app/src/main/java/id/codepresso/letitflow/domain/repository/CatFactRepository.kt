@@ -1,7 +1,7 @@
-package id.codepresso.letitflow.data.repository
+package id.codepresso.letitflow.domain.repository
 
 import id.codepresso.letitflow.data.Resource
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.entity.CatFact
 import kotlinx.coroutines.flow.Flow
 
 /**

@@ -2,10 +2,11 @@ package id.codepresso.letitflow.data.repository
 
 import id.codepresso.letitflow.data.Resource
 import id.codepresso.letitflow.data.mapper.mapCatFact
-import id.codepresso.letitflow.data.database.dao.CatFactDao
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.dao.CatFactDao
+import id.codepresso.letitflow.data.entity.CatFact
 import id.codepresso.letitflow.data.networkBoundResource
-import id.codepresso.letitflow.data.service.CatFactService
+import id.codepresso.letitflow.data.api.CatFactApi
+import id.codepresso.letitflow.domain.repository.CatFactRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.flowOn
  **/
 
 class CatFactRepositoryImpl(
-    private val catFactService: CatFactService,
+    private val catFactApi: CatFactApi,
     private val catFactDao: CatFactDao
 ) : CatFactRepository {
 
@@ -24,7 +25,7 @@ class CatFactRepositoryImpl(
             fetchFromLocal = { catFactDao.getAll() },
             shouldFetchFromRemote = { true },
             fetchFromRemote = {
-                catFactService.getCatFacts("cat", 10)
+                catFactApi.getCatFacts("cat", 10)
             },
             processRemoteResponse = {},
             saveRemoteData = { responses ->

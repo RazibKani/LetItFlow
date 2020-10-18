@@ -2,7 +2,7 @@ package id.codepresso.letitflow.presentation
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import id.codepresso.letitflow.data.database.entity.CatFact
+import id.codepresso.letitflow.data.entity.CatFact
 import kotlinx.android.synthetic.main.item_cat_fact.view.*
 
 /**
